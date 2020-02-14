@@ -1,0 +1,22 @@
+﻿<Window x:Class="Financial_Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Financial_Calculator"
+        mc:Ignorable="d"
+        Title="理财计算器" Height="600" Width="800">
+    <Grid Height="550">
+        <DatePicker FontSize="15px"  Name="BuyDateTimeTp" HorizontalAlignment="Left" Margin="164,32,0,0" VerticalAlignment="Top"/>
+        <DatePicker FontSize="15px"  Name="StartDateTimeTp"  HorizontalAlignment="Left" Margin="164,84,0,0" VerticalAlignment="Top"/>
+        <DatePicker FontSize="15px"  Name="EndTimeTp" HorizontalAlignment="Left" Margin="164,130,0,0" VerticalAlignment="Top"/>
+        <Label FontSize="15px" Content="理财购买时间:" HorizontalAlignment="Left" Margin="21,32,0,0" VerticalAlignment="Top"/>
+        <Label FontSize="15px" Content="理财起息时间:" HorizontalAlignment="Left" Margin="21,84,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.163,0.25"/>
+        <Label FontSize="15px"  Content="理财截止时间:" HorizontalAlignment="Left" Margin="21,130,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.054,1.615"/>
+        <Label FontSize="15px"  Content="理财利率 ( X% ):" HorizontalAlignment="Left" Margin="21,169,0,0" VerticalAlignment="Top"/>
+        <TextBox FontSize="15px" Name="RateTb" HorizontalAlignment="Left" Margin="163,177,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <Button FontSize="15px"  Content="Confirm" HorizontalAlignment="Left" Margin="164,222,0,0" VerticalAlignment="Top" Click="ConfirmBTN_Click" Width="101"/>
+        <Button FontSize="15px"  Content="Reset" HorizontalAlignment="Left" Margin="21,222,0,0" VerticalAlignment="Top" Click="ResetBTN_Click" Width="100"/>
+        <Label FontSize="12px" Name="HistoryLB" HorizontalAlignment="Left" Margin="321,7,0,0" VerticalAlignment="Top" Height="526" Width="458"/>
+    </Grid>
+</Window>
